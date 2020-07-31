@@ -1,7 +1,7 @@
 from mmdet.apis import init_detector,inference_detector
 import numpy as np
 import cv2
-from detec.nms_iou import nms_iou
+from subway_detector.detec.nms_iou import nms_iou
 
 class subway_det(object):
     '''
