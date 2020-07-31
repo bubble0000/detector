@@ -1,4 +1,4 @@
-from class_n.net import *
+from subway_detector.class_n.net import *
 import torch
 import cv2
 import heapq
