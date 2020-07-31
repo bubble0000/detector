@@ -1,7 +1,7 @@
 import torch.nn as nn
 import math
 import torch.utils.model_zoo as model_zoo
-from config import Config
+from subway_detector.config import Config
 import heapq
 from PIL import Image
 
