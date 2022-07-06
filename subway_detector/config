@@ -1,0 +1,31 @@
+coarse_model:
+  arch: resnet50
+  kwargs:
+    num_classes: 2
+  model_path: /media/a/新加卷1/Download/Programs/detector-master/detector/class/10.pkl
+
+fine_model:
+  arch: resnet50
+  kwargs:
+    num_classes: 2
+  model_path: /media/a/新加卷1/Download/Programs/detector-master/detector/class/10.pkl
+
+detect_model:
+  config_file: /media/a/新加卷1/Download/Programs/detector-master/detector/detec/cascade_rcnn_r50_fpn_1x+cascade.py
+  checkpoint_file: /media/a/新加卷1/Download/Programs/detector-master/detector/detec/epoch_5.pth
+  num_roi: 1000
+  nms_args:
+    miji_thr: 0.3
+    h_thr: 0.3
+    nms_thr: 0.05
+    num_thr: 0
+
+preprocess:
+  size: 224
+  mean: [0.5, 0.5 ,0.5]
+  std: [0.5, 0.5 ,0.5]
+
+visualize:
+  vis: True
+  output_dir: ./exp
+
