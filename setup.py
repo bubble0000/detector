@@ -1,16 +1,16 @@
 #from distutils.core import setup
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 tests_require = []
 
 install_requires = []
 
-setup(name='subway_detec', # 模块名称
+setup(name='subway_detector', # 模块名称
       url='',  # 项目包的地址
-      author="No.36",  # Pypi用户名称
-      author_email='as-69@qq.com',  # Pypi用户的邮箱
+      author="summers",  # Pypi用户名称
+      author_email='971770426@qq.com',  # Pypi用户的邮箱
       keywords='python django admin autoregister',
       description='Automatically register models in the admin interface in a smart way.',
       license='MIT',  # 开源许可证类型
